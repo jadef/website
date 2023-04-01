@@ -1,0 +1,25 @@
+{
+  "name": "jadef-website",
+  "version": "0.1.0",
+  "description": "website",
+  "author": "Jade Faist",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jadef/website.git"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.5",
+    "node-sass": "^8.0.0",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "scripts": {
+    "start": "webpack"
+  }
+}

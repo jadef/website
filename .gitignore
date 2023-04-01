@@ -1,4 +1,34 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# Environment #
+###############
+/.project
+.settings/
+/.buildpath
+.bundle
+.tmp
+.sass-cache
+node_modules/
+public/
+coverage/
+
+# Editor temps and files #
+##########################
+.idea
+*~
+*.iml
+*.sw[po]
+TODO.md
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+*.tmp
+*.bak
+*.map
+
+# OS generated files #
+######################
+.DS_Store
+
+# Build #
+######################
