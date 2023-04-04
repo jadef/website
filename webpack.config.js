@@ -12,12 +12,14 @@ module.exports = {
     rules: [
       {
         test: /\.s[ac]ss$/i,
+
         use: [
           // Creates `style` nodes from JS strings
           MiniCssExtractPlugin.loader,
 
           // Translates CSS into CommonJS
           "css-loader",
+          "postcss-loader",
 
           // Compiles Sass to CSS
           "sass-loader"
