@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -30,6 +31,12 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "css/main.css"
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "src/images", to: "images" },
+        { from: "src/index.html", to: "" }
+      ]
     })
   ],
   watch: true
