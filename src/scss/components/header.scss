@@ -1,0 +1,23 @@
+#top {
+  background-image: $c-gr-blue;
+  border-bottom: 1px solid $c-blue2;
+  box-shadow: 0 4px 8px 0 rgba($c-black, 0.15), 0 4px 8px 0 rgba($c-black, 0.15);
+  height: $h-header;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  h1 {
+    font-size: 16vw;
+    font-weight: 300;
+    line-height: $h-header;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    @media screen and (min-width: $bp-small) {
+      font-size: 8.5vw;
+      text-align: left;
+    }
+  }
+}

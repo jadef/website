@@ -1,0 +1,24 @@
+#content {
+  margin: $h-header 0 $h-footer 0;
+  padding: 20px 0;
+
+  .entry {
+    padding-bottom: 40px;
+  }
+
+  .summary {
+    text-align: right;
+
+    strong {
+      font-size: 1.125em;
+    }
+  }
+
+  .logo {
+    background: $c-body;
+    box-shadow: 0 4px 8px 0 rgba($c-black, 0.15);
+    color: $c-black;
+    padding: 40px 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,36 @@
+// ----- Random Bits
+
+// Grid maxing
+.row {
+  margin: 0 auto;
+  max-width: calc(940px + $p-gutter * 2);
+}
+
+.row > div {
+  padding: 0 $p-gutter;
+}
+
+// Selection Coloring
+::-moz-selection {
+  background: $c-accent;
+  color: $c-white;
+  text-shadow: 2px 2px 0 $c-accent;
+}
+
+::selection {
+  background: $c-accent;
+  color: $c-white;
+  text-shadow: 2px 2px 0 $c-accent;
+}
+
+// global box-sizing
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  // font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}

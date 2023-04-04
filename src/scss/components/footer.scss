@@ -1,0 +1,9 @@
+#bottom {
+  background-image: $c-gr-green;
+  border-top: 1px solid $c-green1;
+  bottom: 0;
+  box-shadow: 0 4px 8px 0 rgba($c-black, 0.15);
+  height: $h-footer;
+  position: fixed;
+  width: 100vw;
+}

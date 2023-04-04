@@ -1,0 +1,24 @@
+// Colors
+$c-white: #fafff6;
+$c-gray-dark: #3e3e3e;
+$c-black: #302c0f;
+
+$c-green1: #c5dc71;
+$c-green2: #9bb246;
+$c-green3: #809239;
+
+$c-blue1: #91c0d7;
+$c-blue2: #84a2be;
+$c-blue3: #6483a0;
+$c-blue4: #3d566e;
+
+// Gradients
+$c-gr-blue: linear-gradient(175deg, $c-blue1 0%, $c-blue3 100%);
+$c-gr-green: linear-gradient(175deg, $c-green1 0%, $c-green2 100%);
+
+// Pallette
+$c-background: $c-green3;
+$c-body: $c-white;
+$c-primary: $c-blue1;
+$c-secondary: $c-blue2;
+$c-accent: $c-green2;
