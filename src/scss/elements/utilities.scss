@@ -3,10 +3,10 @@
 // Grid maxing
 .row {
   margin: 0 auto;
-  max-width: calc(940px + $p-gutter * 2);
+  max-width: calc(1020px + $p-gutter * 2);
 }
 
-.row > div {
+.row > .col {
   padding: 0 $p-gutter;
 }
 

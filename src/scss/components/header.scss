@@ -19,5 +19,9 @@
       font-size: 8.5vw;
       text-align: left;
     }
+
+    @media screen and (min-width: $bp-large) {
+      font-size: 5.5vw;
+    }
   }
 }
