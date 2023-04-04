@@ -9,6 +9,7 @@
 node_modules/
 public/
 coverage/
+/build/
 
 # Editor temps and files #
 ##########################
