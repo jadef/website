@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "js/main.js"
+    filename: "js/index.js",
   },
   module: {
     rules: [
@@ -23,21 +23,23 @@ module.exports = {
           "postcss-loader",
 
           // Compiles Sass to CSS
-          "sass-loader"
-        ]
-      }
-    ]
+          "sass-loader",
+        ],
+      },
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/main.css"
+      filename: "css/main.css",
     }),
     new CopyWebpackPlugin({
       patterns: [
         { from: "src/images", to: "images" },
-        { from: "src/index.html", to: "" }
-      ]
-    })
+        { from: "src/index.html", to: "" },
+        { from: "src/js/main.js", to: "js" },
+        { from: "src/jadefaist-resume.pdf", to: "" },
+      ],
+    }),
   ],
-  watch: true
+  watch: true,
 };
