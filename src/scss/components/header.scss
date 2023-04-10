@@ -8,7 +8,7 @@
   width: 100vw;
 
   h1 {
-    font-size: 16vw;
+    font-size: 4.5rem;
     font-weight: 300;
     line-height: $h-header;
     margin: 0;
@@ -16,12 +16,12 @@
     text-align: center;
 
     @media screen and (min-width: $bp-small) {
-      font-size: 8.5vw;
+      // font-size: 8.5vw;
       text-align: left;
     }
 
     @media screen and (min-width: $bp-large) {
-      font-size: 5.5vw;
+      // font-size: 5.5vw;
     }
   }
 }

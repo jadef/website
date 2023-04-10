@@ -24,7 +24,10 @@ body {
   height: 100%;
 
   &::after {
-    background: transparent url("../images/background.jpg") no-repeat top center;
+    background-color: transparent;
+    background-image: var(--bg-image); // Set via JS
+    background-position: top;
+    background-repeat: no-repeat;
     background-size: cover;
     content: "";
     height: 100%;
@@ -93,6 +96,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: $c-secondary;
+  // color: $c-secondary;
   outline: 0;
+  text-decoration: underline;
 }

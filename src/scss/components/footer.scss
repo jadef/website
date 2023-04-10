@@ -6,4 +6,27 @@
   height: $h-footer;
   position: fixed;
   width: 100vw;
+
+  .row {
+    height: 100%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.8rem;
+
+    a {
+      display: block;
+      text-decoration: none;
+
+      @media screen and (min-width: $bp-small) {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+  }
 }
