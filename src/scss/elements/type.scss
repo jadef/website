@@ -32,10 +32,16 @@ body {
     content: "";
     height: 100%;
     left: 0;
+    opacity: 0;
     position: fixed;
+    transition: opacity 0.35s ease-in-out;
     top: 0;
     width: 100%;
     z-index: -1;
+  }
+
+  &.loaded::after {
+    opacity: 1;
   }
 }
 
@@ -47,7 +53,6 @@ h2 {
 
 h2 {
   font-size: 1.8em;
-  padding-top: 0.5em;
   padding-bottom: 1em;
 }
 

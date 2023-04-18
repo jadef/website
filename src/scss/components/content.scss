@@ -4,6 +4,7 @@
 
   .intro {
     margin-bottom: 40px;
+    padding: 20px 0;
     border-bottom: 2px solid rgba($c-green1, 0.15);
   }
 
@@ -35,5 +36,11 @@
     margin-bottom: 1em;
     padding: 40px 20px;
     text-align: center;
+  }
+
+  .closing {
+    margin-top: 20px;
+    padding-top: 40px;
+    border-top: 2px solid rgba($c-green1, 0.15);
   }
 }

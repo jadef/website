@@ -28,9 +28,19 @@ window.onscroll = function () {
 };
 
 // ---- Background image
+
+// Create a new Image object
+const backgroundImage = new Image();
 const body = document.querySelector("body");
 const randomNum = Math.floor(Math.random() * 10) + 1; // images random numbered 1-10
-body.style.setProperty(
-  "--bg-image",
-  `url('../images/background${randomNum}.jpg')`
-);
+
+// Add an onload event handler to set the background image once the image has finished downloading
+backgroundImage.src = "images/background" + randomNum + ".jpg";
+backgroundImage.onload = function () {
+  body.style.setProperty("--bg-image", `url(${backgroundImage.src})`);
+  body.classList.add("loaded");
+};
+
+backgroundImage.onerror = function () {
+  console.log("Image failed to load!");
+};
